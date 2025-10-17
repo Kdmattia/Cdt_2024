@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"></script>
+  <script type="module" src="pb-tify.js" data-template="pages:load-components"></script>
+  <style>
+    html, body { margin: 0; height: 100%; }
+    pb-tify { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <pb-tify
+    id="facsimile"
+    manifest="https://img.serverchroma.cnr.it/iiif-manifests/Momento_manifest.json"
+    subscribe="transcription"
+    emit="transcription">
+  </pb-tify>
+</body>
+</html>
